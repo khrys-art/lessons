@@ -1,0 +1,119 @@
+/* fonts */
+/* font Comforter*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+/*font Lato*/
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+   url("../fonts/Lato-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+   url("../fonts/Lato-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"),
+   url("../fonts/Lato-Black.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+}
+/* body general*/
+body {
+   font-family: "Bitter", sans-serif;
+   font-weight: 400;
+   padding: 20px 10px;
+   margin: 20px 200px;
+   text-indent: 20px;
+   color: rgb(14, 14, 126);
+}
+/*header main*/
+header {
+   color: rgb(255, 0, 0);
+}
+h1 {
+   text-align: center;
+   text-shadow: 5px 5px 3px rgb(0, 0, 255);
+}
+h1,
+.name,
+.list, 
+.parag{
+   font-family: "Bitter", sans-serif; 
+   font-weight: 900;
+   padding: 10px;
+
+}
+.name,
+.list {
+   text-align: right;
+   text-decoration: underline;
+   text-shadow: 3px 3px 7px rgb(111, 49, 187);
+}
+.foto,
+.foto-memorial,
+footer {
+   padding: 10px;
+}
+.date {
+   font-family: "Lato", serif;
+   font-weight: 700;
+   color: rgb(72, 107, 47);
+}
+.phrase {
+   font-family: "Comforter", cursive; /*Comforter Brush*/
+   font-weight: 400;
+   text-align: center;
+   color: rgb(139, 0, 0);
+}
+/*main*/
+p.born {
+   color: rgb(0, 200, 255);
+   text-align: justify;
+   text-decoration: overline;
+   text-transform: capitalize;
+}
+p.education{
+   font-family: "Lato";
+   font-weight: 900;
+   color: rgb(85, 107, 47);
+   text-transform: lowercase;
+}
+/*вкладеність class~p */
+.parag~p{
+   color: rgb(255, 20, 122)
+}
+.text-one {
+   text-transform: uppercase;
+   line-height: 2;
+}
+.text-two {
+
+   text-indent: 20px;
+   text-decoration: line-through;
+}
+.text-murder{
+   word-spacing: 20px;
+}
+.text-three {
+   letter-spacing: 3px;
+
+}
+/*вкладеність class>p */
+.try>p{
+   color: rgb(146, 35, 35);
+}
+.last-block{
+   padding: 10px;
+   width: 200px;
+}
+p.translate{
+   font-family: "Bitter";
+   font-weight: 500;
+   color: rgb(199, 174, 30);
+}
