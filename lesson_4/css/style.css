@@ -1,0 +1,172 @@
+/* підключення шрифтів */
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+/*Larseeit*/
+@font-face {
+   font-family: "Larsseit";
+   src: url("../fonts/Larsseit-Regular.woff2") format("woff2"),
+   url("../fonts/Larsseit-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Larsseit";
+   src: url("../fonts/Larsseit-Medium.woff2") format("woff2"),
+   url("../fonts/Larsseit-Medium.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Larsseit";
+   src: url("../fonts/Larsseit-Bold.woff2") format("woff2"),
+   url("../fonts/Larsseit-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+}
+
+/*Lato*/
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+   url("../fonts/Lato-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+   url("../fonts/Lato-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"),
+   url("../fonts/Lato-Black.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+}
+header {
+   font-family: "Larsseit";
+   font-weight: 400;
+}
+h1 {
+   font-family: "Lato";
+   font-weight: 900;
+}
+
+/* css параметри*/
+/*header*/
+/* гіперссилка*/
+.a-one {
+   color: aqua;
+}
+.a-two {
+   color: blueviolet;
+}
+.a-three {
+   color: antiquewhite;
+}
+.a-four {
+   color: brown;
+}
+.a-five {
+   color: burlywood;
+}
+.a-six {
+   color: cadetblue;
+}
+.a-seven {
+   color: chartreuse;
+}
+.a-eight {
+   color: chocolate;
+}
+.a-nine {
+   color: cornflowerblue;
+}
+.a-ten {
+   color: coral;
+}
+
+/*main*/
+.text p {
+   color: crimson;
+   font-family: "Lato";
+   font-weight: 400;
+}
+/*заголовки*/
+/*тег-id*/
+div #one,
+#two,
+div #three,
+div #four,
+#five,
+div #six,
+div #seven,
+div #eight,
+#nine,
+div #ten{
+   color: blue;
+   font-family: "Lansseit";
+   font-weight: 900;
+}
+
+/*вмість по розділам*/
+.the-first-thing {
+   color: cyan;
+}
+.the-second-thing {
+   color: darkblue;
+}
+.the-third-thing {
+   color: darkmagenta;
+   font-family: "Roboto";
+   font-weight: 900;
+}
+/*клас-клас*/
+.the-third-thing .parag{
+   color: darkgoldenrod;
+}
+/*клас-параграф*/
+.the-fourth-thing p{
+   color: darkred;
+}
+/*звернення до кількох класів*/
+.the-fifth-thing,
+.the-seventh-thingt,
+.the-tenth-thing {
+   color: forestgreen;
+   font-family: "Lato";
+   font-weight: 700;
+}
+/*звернення до клас-клас*/
+.the-sixth-thing.block,
+.the-nineth-thing.block {
+      color: darkkhaki;
+      font-family: "Larsseit";
+      font-weight: 700;
+   }
+
+.the-eighth-thing {
+   color: palevioletred;
+}
+
+/*footer*/
+/*звернення клас-універсальний селектор*/
+.contact * {
+   color: lawngreen;
+   font-family: "Roboto";
+   font-weight: 700;
+}
