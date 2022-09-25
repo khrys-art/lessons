@@ -1,0 +1,144 @@
+/*fonts*/
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+      url("../fonts/Lato-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"),
+      url("../fonts/Lato-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"),
+      url("../fonts/Lato-Black.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+}
+body{
+   font-family: "Lato";
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.6;  /*or 160%*/
+}
+/*header*/
+[class*="-container"]{
+   margin: 0 auto;
+   max-width: 810px;
+}
+.title{
+   font-weight: 900;
+   font-size: 46px;
+   color: rgba(30, 33, 44, 1);
+   margin-bottom: 92px;
+   line-height: 1.3;
+}
+/*main*/
+
+/* image */
+.image{
+   max-width: 100%;
+   margin-bottom: 60px;
+}
+.parag,
+.parag-two{
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   color: rgba(30, 33, 44, 1);
+}
+.block,
+.parag-two{
+   margin-bottom: 48px;
+}
+
+.block,
+.the-last-text{
+   color: rgba(66, 69, 81, 1);
+   line-height: 1.6;
+}
+.text,
+.parag,
+.list{
+   margin-bottom: 24px;
+}
+.parag-two{
+   margin-left: 58px; /*or 0 0 0 58*/
+}
+.item{
+   margin-left: 32px; /*space on the list icon*/
+}
+.the-last-text{
+margin-bottom: 60px;
+}
+
+/*====================practice============================*/
+.background-container{
+   background: linear-gradient(135deg, #cb60b3 0%,#c146a1 32%,#c146a1 32%,#a80077 79%,#db36a4 100%);
+   background-image: url(../img/istockphoto-620951116-612x612.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   padding: 20px;
+   text-indent: 20px;
+}
+.background{
+   max-width: 300px;
+   text-align: center;
+}
+.background.b-image{
+   background-image: url(../img/sunrisesunsettime.jpg);
+   background-position: 10px 0px;
+   background-size: 200px auto;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+}
+.repeat-x{
+   background-image: url(../img/sunrise-cover.jpg);
+   background-repeat: repeat-x;
+   background-size: 270px auto;
+}
+/*list*/
+ul{
+   padding-left: 20px;
+}
+.list {
+   list-style: square;
+   list-style-position: inside;
+}
+h2,
+.sunrise{
+   font-weight: 900;
+}
+div.angle{
+   background: linear-gradient(to right, #2ffcf5 0%,#2ffcf5 0%,#10564e 22%,#2ffcf5 38%,#11285b 53%,#2ffcf5 74%,#06020f 88%)
+}
+p.repeat{
+   background-image: url(../img/sunrise-cover.jpg);
+   background-size: 100px auto;
+}
+p.colors{
+   background: radial-gradient(ellipse at center, #3b3f0c 0%,#eaea2c 30%,#e8472e 60%);
+   background-size: 350px auto;
+}
+p.repeat-y{
+   background: url(../img/sunrise-cover.jpg) 100% 100% / 150px auto repeat-y;
+   /*background-image: url(../img/sunrise-cover.jpg);
+   background-size: 150px auto;
+   background-repeat: repeat-y;
+   background-position: 100% 100%;*/
+}
+/*footer*/
+.footer{
+   background-color: rgba(30, 33, 44, 1);
+   ;
+}
+.footer-container{
+   padding: 20px;
+   text-decoration: underline;
+}
