@@ -1,0 +1,146 @@
+body{
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 160%;
+   max-width: 100%;
+}
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+   /* background-color: rgb(174, 150, 150); */
+}
+/* [class*="__container"]{
+   max-width: 900px;
+   margin: 0 auto;
+} */
+.animation {
+   background: url(../img/desert-scene-at-night_1308-28268.webp) no-repeat;
+   height: 800px;
+   width: 1500px;
+   background-size: auto 800px;
+   
+}
+.decoration__image-1,
+.decoration__image-2,
+.decoration__image-3{
+   max-width: 100%;
+   height: 50px;
+   width: 200px;
+   max-width: 100%;
+   position: absolute;
+   top: 150px;
+   transform: translateX(0px);
+   animation: clouds 50s linear 1s backwards;
+   z-index: 4;
+}
+@keyframes clouds{
+   from{
+      transform: translateX(0px);
+   }
+   to{
+      transform: translateX(-500px);
+   }
+}
+
+.decoration__image-1{
+   left: 300px;
+}
+.decoration__image-2{
+   left: 750px;
+}
+.decoration__image-3{
+   top: 240px;
+   left:600px;
+   height: 25px;
+   width: 100px;
+}
+/*======cat=========*/
+.decoration__puss{
+   max-width: 100%;
+   height: 300px;
+   width: 260px;
+   position: absolute;
+   transform: translate(-300px,-300px);
+   animation: cat 0.5s linear 4s forwards;
+   z-index: 3;
+}
+@keyframes cat{
+   0%{
+      transform: translate(-100px,-100px);
+   }
+   100%{
+      transform: translate(550px, 450px);
+   }
+}
+.decoration__field-rolling{
+   max-width: 100%;
+   height: 100px;
+   width: 140px;
+   position: absolute;
+   top: 580px;
+   left: 980px;
+   z-index: 2;
+   transform: translate(0px,0px);
+   animation: field-rolling 8s ease-out 3s forwards;
+}
+@keyframes field-rolling{
+   0%{
+      transform: translate(-100px,-5px);
+   }
+   100%{
+      transform: translate(-650px,-45px);
+   }
+}
+.title {
+   font-weight: 500;
+   font-size: 30px;
+   animation: title 1s linear 1s forwards,
+            title-2 20s linear 5s forwards;
+   transform: translate(0px, 50%);
+   opacity: 0;
+   padding: 50px;
+   width: 400px;
+   position: absolute;
+   left: 900px;
+   color: white;
+   z-index: 1;
+}
+.title:not(:last-child){
+   margin-bottom: 20px;
+}
+.title__item{
+   margin: 20px;
+   font-size: 24px;
+   font-weight: 700;
+   letter-spacing: 5px;
+}
+.title__item {
+   animation: title 1s linear 2s forwards;
+   line-height: 1.5;
+   transform: translate(0px, 50%);
+   opacity: 0;
+}
+.title__text{
+   line-height: 1;
+}
+@keyframes title {
+   0% {
+   }
+   100% {
+      transform: translate(0px, 0%);
+      opacity: 1;
+   }
+}
+@keyframes title-2 {
+   0% {
+      transform: rotate(0deg);
+   }
+   10%{
+      transform: rotate(360deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
