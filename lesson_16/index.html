@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/pazzle.css">
+   <title>lesson_16</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <!-- flex-container -->
+         <div class="header__container">
+            <a href="" class="header__logo">
+               <img src="img/icons/logo.svg" alt="logo">
+            </a>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item">
+                     <a href="" class="menu__link">About Us</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Courses</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Events</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link menu__link--orange">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__actions actions-header">
+               <a href="" class="action-header__button button"><span>Get consultation</span></a>
+               <a href="" class="action-header__auth">Log in / Register</a>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <section class="page__main main-block"> <!--add gradient-->
+            <div class="main-block__container">
+               <div class="main-block__body body-main">
+                  <div class="body-main__media"> 
+                     <img  class="body-main__image" src="img/illustration.svg" alt="illustration">
+                  </div>
+                  <div class="body-main__content">
+                     <div class="body-main__title title title--margin"> <!--40px mb need to add-->
+                        <h2 class="title__subtitle">Any questions?</h2>
+                        <h1 class="title__main">Drop us a line</h1>
+                     </div>
+                     <div class="body-main__form form">
+                        <form class="form__main" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data">
+                           <div class="form__line">
+                              <label for="name" class="form__label">First Name*</label>
+                              <input id="name" name="name" type="text" class="form__input" required autocomplete="off" placeholder="Your first name">
+                           </div>
+                           <div class="form__line">
+                              <label for="lastname" class="form__label">Last Name*</label>
+                              <input id="lastname" name="lastname" type="text" class="form__input" required autocomplete="off"  placeholder="Your last name">
+                           </div>
+                           <div class="form__line">
+                              <label for="e-mail" class="form__label">Email*</label>
+                              <input id="e-mail" name="e-mail" type="email" class="form__input" required autocomplete="off"  placeholder="Your working email">
+                           </div>
+                           <div class="form__line">
+                              <label for="phone" class="form__label">Phone*</label>
+                              <input id="phone" name="phone" type="tel" class="form__input" required autocomplete="off" placeholder="Your phone number">
+                           </div>
+                           <div class="form__line form__line--width">
+                              <p class="form__message">Message*</p>
+                              <textarea name="message" id="message" class="form__area" cols="30" rows="10" placeholder="Your message"></textarea>
+                           </div>
+                           <div class="form__line radio">
+                              <div class="radio__one">
+                                 <span> Please select your preferred contact method:</span>
+                                 <div class="radio-1">
+                                    <input id="radio-1" name="contact" type="radio" class="radio__input" required value="email" checked>
+                                    <label for="radio-1" class="radio__label"><span class="radio__text">Email</span></label>
+                                 </div>
+                                 <div class="radio-1">
+                                    <input id="radio-2" name="contact" type="radio" class="radio__input" required value="phone">
+                                    <label for="radio-2" class="radio__label"><span class="radio__text"> Phone</span></label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form__line checkbox">
+                              <input id="agree" name="agree" value="yes" type="checkbox" class="checkbox__input" required>
+                              <label for="agree" class="checkbox__label">
+                                 <span class="checkbox__text">I agree to receive communications from Createx Online School</span>
+                              </label>
+                           </div>
+                           <div class="form__line">
+                              <button class="body-main__button button button--submit-pad" type="submit"><span>Send message</span></button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- ========================================================= -->
+         <section class="page__main ease-form">
+            <div class="ease-form__container">
+               <div class="ease-form__body form">
+                  <form class="form__2" action="#" method="post" enctype="multipart/form-data">
+                     <div class="form__title">
+                        <h2 class="form__text-3">Форма реєстрації</h2>
+                     </div>
+                     <div class="form__row">
+                        <label for="name-1" class="form__label-2">Введіть ваше ім`я:</label>
+                        <input id="name-1" name="name" type="text" class="form__input-2" placeholder="Введіть ваше ім`я" required autocomplete="off" >
+                     </div>
+                     <div class="form__row">
+                        <label for="name-2" class="form__label-2">Введіть ваше прізвище:</label>
+                        <input id="name-2" name="name" type="text" class="form__input-2" placeholder="Введіть ваше прізвище" required autocomplete="off" >
+                     </div>
+                     <div class="form__row">
+                        <div class="form__row">
+                           <label for="birthday" class="form__label-2">Введіть вашy дату народження:</label>
+                           <input id="birthday" name="date" type="date" class="form__input-2" required autocomplete="off" >
+                        </div>
+                     </div>
+                     <div class="form__row">
+                        <label for="email" class="form__label-2">Введіть ваш e-mail:</label>
+                        <input id="email" name="e-mail" type="email" class="form__input-2" required autocomplete="on" placeholder="Введіть ваш e-mail" >
+                     </div>
+                     <div class="form__row">
+                        <label for="tell" class="form__label-2">Введіть ваш моб.номер:</label>
+                        <input id="tell" type="tel" name="phone" class="form__input-2" required autocomplete="on" placeholder="Введіть ваш моб.номер">
+                     </div>
+                     <div class="form__row">
+                        <label for="number" class="form__label-2">Введіть улюблену цифру:</label>
+                        <input id="number" type="number" name="number" class="form__input-2" required autocomplete="off">
+                     </div>
+                     <div class="form__row">
+                           <label for="mood" class="form__label-2" >Який у вас настрій?</label>
+                        <input id="mood" class="form__one form__input" name="mood" type="range" autocomplete="off">
+                     </div>
+                     <div class="form__row">
+                        <label for="mood" class="form__label-2" >Вкажіть ваше місто:</label>
+                        <select class="form__select" name="city">
+                           <option value="Lviv">Львів</option>
+                           <option value="Kiev" selected>Київ</option>
+                           <option value="Lutsk">Луцьк</option>
+                           <option value="Rivne">Рівне</option>
+                           <option value="Zhytomyr">Житомир</option>
+                           <option value="Chernihiv">Чернігів</option>
+                           <option value="Sumy">Суми</option>
+                           <option value="Uzhhorod">Ужгород</option>
+                           <option value="Ivano-Frankivsk">Івано-Франківськ</option>
+                           <option value="Ternopil">Тернопіль</option>
+                           <option value="Chernivtsi">Чернівці</option>
+                           <option value="Khmelnytskyi">Хмельницький</option>
+                           <option value="Vinnytsia">Вінниця</option>
+                           <option value="Odesa">Одеса</option>
+                           <option value="Cherkasy">Черкаси</option>
+                           <option value="Mykolayiv">Миколаїв</option>
+                           <option value="Kropyvnytskyi">Кропивницький</option>
+                           <option value="Poltava">Полтава</option>
+                           <option value="Kherson">Херсон</option>
+                           <option value="Dnipro">Дніпро</option>
+                           <option value="Kharkiv">Харків</option>
+                           <option value="Simferopol">Сімферополь</option>
+                           <option value="Zaporizhzhia">Запоріжжя</option>
+                           <option value="Donetsk">Донецьк</option>
+                           <option value="Luhansk">Луганськ</option>
+                        </select> 
+                     </div>
+                     <div class="form__row">
+                        <label for="password" class="form__label-2">Загрузіть ваше фото:</label>
+                        <input class="form__input-2" name="file" type="file" multiple accept="image/png, images/jpg">
+                     </div>
+                     <div class="form__row">
+                        <label for="password" class="form__label-2">Введіть ваш пароль:</label>
+                        <input id="password" type="password" name="password" class="form__input-2" required autocomplete="on" placeholder="Введіть ваш пароль">
+                     </div>
+                     <div class="form__row">
+                        <button class="form__button button-bc" type="reset"><span>Скинути</span></button>
+                     </div>
+                     <div class="form__row">
+                        <button class="form__button button-bc" type="submit"><span>Зареєтруватися</span></button>
+                     </div>
+                     <!-- The secret -->
+                     <div class="form__row">
+                        <input name="it`s something secret"  value="I`m not tell you" type="hidden">
+                     </div>
+                     <!-- ========== -->
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <p>I`m not done yet, SORRY...to be continued</p>
+            <p>Thanks for checking and have a nice day :)</p>
+         </div>
+      </footer>
+   </div>
+</body>
+</html>

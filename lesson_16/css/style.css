@@ -1,0 +1,315 @@
+body{
+   font-family: "Lato";
+   color: #424551;
+   line-height: 160%;
+}
+/*=========================================================*/
+.wrapper{
+   overflow: hidden;
+   min-height: 100%; 
+   position: relative;
+   display: flex;
+   flex-direction: column; 
+}
+.wrapper > main{
+   flex-grow: 1; /*дає рости контенту/main*/
+}
+[class*="__container"]{
+   max-width: 1260px; /*центрування*/
+   margin: 0 auto;
+   padding-left: 15px; /*контент не впритик до краю*/
+   padding-right: 15px;
+}
+/*==========================================================*/
+/* .page{}
+.page__main{} */
+/* ========================================================= */
+
+.header{
+   position: absolute;
+   /* згодом position: fixed; */
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 0; /*до висоти блоку+відступи зверху знизу=92px*/
+   z-index: 88;
+}
+.header__container {
+   display: flex;
+   align-items: center;
+   gap: 60px; /*відступ від логотипу до меню*/
+}
+/* .header__logo {
+} */
+.header__menu {
+   flex-grow: 1; /*дозволяємо збільшуватись меню водночас роблячи відступ до кнопки*/
+}
+/* .header__actions {
+}
+.menu {
+} */
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 40px; /* відступи між посиланнями/зправа*/
+   row-gap: 5px; /* відступи між посиланнями/вниз*/
+}
+/* .menu__item {
+} */
+.menu__link {
+   font-weight: 700;
+   text-decoration: none;
+}
+.menu__link--orange{
+   color: #FF3F3A;
+}
+.menu__link:hover{
+   text-decoration: underline;
+}
+.menu__link:active{
+   color: #FF3F3A;
+}
+.actions-header {
+   flex-shrink: 0; /*відміна зменшення об`єктів*/
+   display: flex;
+   align-items: center;
+   gap: 36px;
+   flex-wrap: wrap;
+}
+.action-header__auth {
+   background: url(../img/icons/user.svg) left no-repeat;
+   padding-left: 24px;
+   font-weight: 700;
+   line-height: 1.25; /* задали висоти іконці,бо зрізана, (min-heigth)*/
+   text-decoration: none;
+}
+.action-header__auth:hover{
+   text-decoration: underline;
+}
+/* =================================== */
+.main-block {
+   /*відступи від початку сайту до контенту в блоці,найв.об`єкту*/
+   padding: 152px 0px 180px 0px; 
+   /*відступи від останнього ел в блоці до наступного блоку*/
+}
+.main-block__container {
+   position: relative;
+}
+.body-main {
+   display: flex;
+   align-items: center;
+}
+.body-main__media{
+   flex: 0 1 34.6%;
+}
+.body-main__image{
+   max-width: 103.4%;
+   transform: translate(-3.4%,0px) ;
+}
+.body-main__content{
+   padding-left: 8%; /* 98.5px;*/
+   flex: 0 1 65.4%; 
+   align-self: flex-start;
+}
+.title--margin{
+   margin-bottom: 40px;
+}
+.body-main__form{
+   display: inline-flex;
+}
+.form:not(:last-child){
+   margin-bottom: 48px;
+}
+.form__main { 
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 25px;
+   row-gap: 24px; 
+}
+.form__line {
+   display: flex;
+   flex: 0 1 340px;
+   flex-direction: column;
+   gap: 8px;
+}
+.form__label {
+   display: inline-flex;
+   color: #424551;
+   line-height: 160%;
+}
+.form__input {
+   height: 52px;
+}
+.form__input::placeholder{
+   color: #9A9CA5;
+}
+.form__line--width{
+   flex: 0 1 705px;
+}
+.form__input,
+.form__area{
+   background: #FFFFFF;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+   padding: 13px 0px 13px 16px;
+   line-height: 160%;
+}
+.form__area{
+   resize: none;
+   height: 128px;
+   width: 100%;
+   color: #9A9CA5;
+}
+/*кастомний radio*/
+.radio{
+   position: relative;
+   flex: 0 1 705px;
+}
+.radio__one{
+   display: flex;
+   gap: 20px;
+}
+.radio-1{
+   padding-left: 16px;
+}
+.radio__input{
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+.radio__label{
+   cursor: pointer;
+   display: inline-flex;
+   gap: 10px;
+   padding: 3px 5px;
+}
+.radio__label::before{
+   content: "";
+   position:relative;
+   top: 3px;
+   flex: 0 0 20px;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #535355;
+   background-color: rgb(254, 250, 250);
+   border-radius: 100%;
+}
+.radio__input:checked + .radio__label::before{ 
+   /*інпут який ми сховали і ми звертаємося до наступного обєкту - лейбл, до його біфора*/
+   background: hwb(2 23% 0%) url("../img/icons/check.svg") center / 74% no-repeat;
+}
+/*кастомний чекбох*/
+.checkbox{
+   position: relative;
+}
+.checkbox__input {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+/*відслідковуємо вибраний чекбокс чи ні*/
+/*.checkbox__input:focus + .checkbox__label::before{*/ /*інпут який ми сховали і ми звертаємося до наступного обєкту - лейбл, до його біфора*/
+/* background-color: #FF3F3A;
+}*/
+.checkbox__input:checked + .checkbox__label::before{ 
+   /*інпут який ми сховали і ми звертаємося до наступного обєкту - лейбл, до його біфора*/
+   background: hwb(2 23% 0%) url("../img/icons/check.svg") center / 74% no-repeat;
+}
+.checkbox__label { /*зафлексили текст*/
+   cursor: pointer;
+   display: inline-flex;
+   /* align-items: center; прибираємо, якщо тексту буде більше - поламається = працюємо зі спан*/
+   gap: 10px;
+}
+.checkbox__label::before{ /*малюємо сам квадрат*/
+   content: "";
+   flex: 0 0 20px; /*текст поїхав, коли флексемо текс з псевдоелем просто треба + width */
+   width: 20px;
+   height: 20px;
+   background-color: #fcfcfc;
+   border-radius: 4px;
+   border: 1px solid #535355;
+}
+.checkbox__text { /*спан*/
+   align-self: center;
+}
+/*================================================*/
+
+.form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 80px 0px;
+}
+.form__2{
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 10px;
+   column-gap: 10px;
+   padding: 50px 0px;
+   background-color: rgb(255, 63, 58);
+   border-radius: 30px;
+   flex: 0 1 60%;
+   justify-content: space-around;
+}
+.form__row{
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 35%;
+   gap: 10px;
+}
+.form__title{
+   display: flex;
+   flex: 0 1 100%;
+   padding: 0px 0px 40px 0px;
+   justify-content: center;
+}
+.form__text-3{
+   text-align: center;
+   font-weight: 700;
+   color: rgb(22, 21, 21);
+   font-size: 24px;
+}
+.form__row:not(:last-child){
+   margin-bottom: 15px;
+}
+.form__label-2{
+   font-weight: 700;
+   color: rgb(22, 21, 21);
+   padding-left: 14px;
+   flex: 0 1 auto;
+}
+.form__input-2,
+.form__select{
+   padding: 13px 20px;
+   border: 2px solid #535355;
+   border-radius: 50px;
+   background-color: rgb(241, 161, 158);
+   line-height: 160%;
+   height: 50px;
+   width: 100%;
+   box-shadow: inset 5px 5px 8px grey;
+}
+.button-bc{
+   background: rgb(241, 161, 158);
+   border: 2px solid  #535355;
+   border-radius: 50px;
+   font-weight: 700;
+   color: rgb(22, 21, 21);
+   padding: 13px 20px;
+   box-shadow: 1px 6px 3px 0px grey;
+}
+.button-bc:hover{
+   transform: translate(2px,2px);
+   box-shadow: 0px 4px 3px 0px grey;
+}
+.footer{
+   background: #1E212C;
+   height: 100px;
+   padding: 15px 0px;
+}
+.footer__container{
+   color:white;
+}
