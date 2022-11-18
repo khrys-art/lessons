@@ -1,0 +1,26 @@
+/* @media (max-width: 1260px){
+   .header__container{
+      grid-template-columns: 10% 46% 35%;
+   }
+} */
+
+/* @media (max-width: 1199.98px){
+   .header__container{
+      grid-template-columns: 1fr;
+      gap: 30px;
+      justify-items: center;
+   }
+} */
+/*
+@media (990.98px){
+
+}
+@media (767.98px){
+
+}
+@media (639.98px){
+
+}
+@media (479.98px){
+
+} */
