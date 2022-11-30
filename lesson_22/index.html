@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_22</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="page">
+         <div class="page__container">
+            <div class="page__block">
+               <h1 class="page__title">Семантика</h1>
+               <p class="page__text"><span>Варіант 1,2</span> - вірно.</p>
+               <p class="page__text text--false"><span>Варіант 3</span> - виведе помилку, немає ";"</p>
+               <p class="page__text text--false"><span> Варіант 4</span> - виведе помилку, не закриті лапки.</p>
+            </div>
+            <div class="page__block">
+               <h2 class="page__title">Змінні/константи</h2>
+               <p class="page__text text--false"><span>Варіант 1</span> - не вірно, нема ";" 
+                  <pre>Вірно: 
+               let user = 'Вася'; 
+               let age = 36;
+                  </pre>
+               <p class="page__text"><span>Варіант 2</span> - вірно.</p>
+               <p class="page__text text--warn"><span>Варіант 3</span> - помилки не викличе та краще писати через lowerCase - myAge.</p>
+               <p class="page__text text--warn"><span>Варіант 4</span> - помилки не викличе, проте краще в даному випадку краще записувати blockSize, тому що значення визначається в процесі виконання програми.</p>
+               <p class="page__text"><span>Варіант 5</span> - вірні (var працює за межами блоку if).</p>
+            </div>
+            <div class="page__block">
+               <h2 class="page__title">Типи даних</h2>
+               <p class="page__text"><span>Варіант 1</span> - вірно.</p>
+               <p class="page__text text--false"><span>Варіант 2</span> - не вірно, при діленні на нуль виведе Infinity.</p>
+               <p class="page__text text--false"><span> Варіант 3</span> - не вірно, виведе underfined.</p>
+               <p class="page__text"><span> Варіант 4</span> - вірно.</p>
+            </div>
+         </div>
+      </main>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
