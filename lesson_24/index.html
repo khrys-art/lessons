@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_24</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="page">
+         <div class="page__container">
+            <div class="page__block">
+               <h1 class="page__title">Функції</h1>
+               <p class="page__text"><span>Задача 1</span> - першим виведе "Коля", setTimeout з 0 затримкою, потрапляє в чергу і
+                  виконується пізніше звичайного коду, в script.js, рядок 7, 10.</p>
+               <p class="page__text"><span>Задача 2</span> - вірно - запускати функцію можна як після так і до її оголошення, а також багато раз.</p>
+               <p class="page__text text--false"><span>Задача 3</span> - не вірно, треба спочатку оголосити змінну, а тоді визвати цю функцію та + ; .Вірно:</p>
+               <pre>
+            let showMessage = function () {
+               console.log('Повідомлення2!');
+            };
+            showMessage();
+               </pre>
+               <p class="page__text text--false"><span> Задача 4</span> - слід оголосити змінну та всередині умови привласнити їй функцію. Вірно:</p>
+               <pre>
+            'use strict'
+            let showMessage3;
+            if (2 > 1) {
+               showMessage3 =  function () {
+                  console.log('Повідомлення3!');
+               };
+            }
+            showMessage3(); 
+               </pre>
+            </div>
+            <div class="page__block">
+               <h2 class="page__title">Масив</h2>
+               <p class="page__text page-text1"><span>Задача 1</span> - отримаємо 4, змінні посилаються на один і той же масив, тому додавши ще одне значення його довжина стає ще на 1 більше.</p>
+               <p class="page__text"><span>Задача 2</span> - в script.js: 45-64, console - 50.</p>
+               <p class="page__text"><span>Задача 3</span> - в script.js: 67-70.</p>
+               <p class="page__text"><span>Задача 4</span> - в script.js: 72-74.</p>
+               <p class="page__text"><span>Задача 5</span> - початкове значення не вказане, тому previousValue = першому елементу масиву - 9, також, масив arrTwo не оголошений - викличе помилку.</p>
+            </div>
+            <div class="page__block">
+               <h2 class="page__title">DOM</h2>
+               <p class="page__text"><span>Задача 1</span> - в script.js, рядок 47-57</p>
+               <div data-say-hi="yes">Привіт!</div>
+               <p class="page__text"><span>Задача 2</span> - в script.js, рядок 90.</p>
+               <ul class="task2">
+                  <li class="korchi">Корчі</li>
+                  <li class="yonchi">Йончі</li>
+               </ul>
+               <p class="page__text"><span>Задача 3</span> - в script.js, рядок 93</p>
+               <div class="like"></div>
+               <div class="subscribe"></div>
+               <div class="like subscribe"></div>
+               <p class="page__text"><span>Задача 4</span> - в даному випадку нікуди, викличе помилку, так як в змінну list ми отримаємо колекцію, метод insertAdjacentHTML працює з елементами, треба використати querySelector, тоді елемент + в кінець списка ul.</p>
+            </div>
+            <div class="page__block">
+               <h2 class="page__title">Розміри, прокрутка, координати</h2>
+               <p class="page__text"><span>Задача 1</span> - в script.js, рядок 126-139.</p>
+               <p class="page__text"><span>Задача 2</span> - в script.js, рядок 142-156.</p>
+               <p class="page__text"><span>Задача 3</span> - в script.js, рядок 159-173.</p>
+            </div>
+         </div>
+      </main>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
